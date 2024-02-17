@@ -26,7 +26,7 @@ This is a simple tower defense game built using Python and Pygame. The objective
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/tower-defense.git
+    git clone https://github.com/RayFR/Tower-Defence-Game-Pygame.git
     ```
 
 2. Install Pygame if you haven't already:
