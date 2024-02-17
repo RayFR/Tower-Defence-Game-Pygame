@@ -1,6 +1,6 @@
 # Pygame Tower Defense
 
-![Tower Defense Screenshot](Screenshot 2024-01-19 123450.png)
+![Tower Defense Screenshot](MENUSS.png)
 
 ## Overview
 
