@@ -1,6 +1,6 @@
 # Pygame Tower Defense
 
-![Tower Defense Screenshot](/path/to/screenshot.png)
+![Tower Defense Screenshot](Screenshot 2024-01-19 123450.png)
 
 ## Overview
 
