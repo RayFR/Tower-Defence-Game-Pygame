@@ -15,7 +15,7 @@ pygame.mixer.init() # INITIALIZE
 WIDTH = 1000
 HEIGHT = 600    
 SCREEN = pygame.display.set_mode((WIDTH, HEIGHT)) # sets the screen dimensions to a predetermined WIDTH and HEIGHT var
-pygame.display.set_caption("NEA Tower Defence Game") # sets the caption for the game screen
+pygame.display.set_caption("Tower Defence Game") # sets the caption for the game screen
 
 # MUSIC 
 
@@ -196,7 +196,7 @@ class Main:
 
         # User Interface Variables
         self.userInterface = Root(self.screen, width = WIDTH, height = HEIGHT)
-        self.sideMenu = UIElement(parent=self.userInterface, x=800, y=0, width=200, height=HEIGHT, defaultStyle=Style(background=(255, 255, 255)))
+        self.sideMenu = UIElement(parent=self.userInterface, x=800, y=0, width=200, height=HEIGHT, defaultStyle=Style(background=(130, 78, 55)))
 
         styleDetails = Style(font_size=24)
         startWaveStyle = Style(font_size=48, colour=(255, 255, 255))
@@ -216,10 +216,10 @@ class Main:
         self.startWaveText = Text(self.userInterface, 75, 280, 200, 15, text="Press \"Space\" key to start the next wave", defaultStyle=startWaveStyle, dropshadow=True)
         self.insufficientFundsText = Text(self.userInterface, 250, 280, 200, 15, text="Insufficient Funds", defaultStyle=insufficientFundsStyle, dropshadow=True, canAlert=True)
 
-        self.spawnTowerOne = UIElement(self.sideMenu, 30, 320, 50, 50, "Tower One", Style(background=(255, 255, 0)), callback=lambda: pygame.event.post(pygame.event.Event(SPAWN_TOWER_ONE)))
-        self.spawnTowerTwo = UIElement(self.sideMenu, 120, 320, 50, 50, "Tower Two", Style(background=(255, 255, 0)), callback=lambda: pygame.event.post(pygame.event.Event(SPAWN_TOWER_TWO)))
-        self.spawnTowerThree = UIElement(self.sideMenu, 30, 400, 50, 50, "Tower Three", Style(background=(255, 255, 0)), callback=lambda: pygame.event.post(pygame.event.Event(SPAWN_TOWER_THREE)))
-        self.spawnTowerFour = UIElement(self.sideMenu, 120, 400, 50, 50, "Tower Four", Style(background=(255, 255, 0)), callback=lambda: pygame.event.post(pygame.event.Event(SPAWN_TOWER_FOUR)))
+        self.spawnTowerOne = UIElement(self.sideMenu, 15, 320, 75, 50, "Fireball Human", Style(background=(240, 207, 190)), callback=lambda: pygame.event.post(pygame.event.Event(SPAWN_TOWER_ONE)))
+        self.spawnTowerTwo = UIElement(self.sideMenu, 110, 320, 75, 50, "Evil Bunny", Style(background=(218, 112, 214)), callback=lambda: pygame.event.post(pygame.event.Event(SPAWN_TOWER_TWO)))
+        self.spawnTowerThree = UIElement(self.sideMenu, 15, 400, 75, 50, "Wind Golem", Style(background=(198, 198, 198)), callback=lambda: pygame.event.post(pygame.event.Event(SPAWN_TOWER_THREE)))
+        self.spawnTowerFour = UIElement(self.sideMenu, 110, 400, 75, 50, "Super Zombie", Style(background=(144, 238, 144)), callback=lambda: pygame.event.post(pygame.event.Event(SPAWN_TOWER_FOUR)))
 
         # Pause Interface Variables
         self.pauseMenu = UIElement(parent=self.userInterface, x=0, y=0, width=800, height=600, defaultStyle=Style(background=(255, 255, 255), opacity=50))
